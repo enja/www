@@ -1,0 +1,16 @@
+{
+  "globals": {
+    "site_title": "en.ja",
+    "description": "en.ja tries to be a bridge between English and Japanese Web development communities via translation",
+    "site_url": "http://www.enja.io",
+    "owner": {
+      "name": "Yuya Saito",
+      "bio": "Front-end Develper by day, translator by night.",
+      "twitter": "cssradar",
+      "github": "studiomohawk",
+      "googleplus": "YuyaSaito",
+      "pinboard": "studiomohawk"
+    },
+    "issue": "https://github.com/enja/www/new"
+  }
+}

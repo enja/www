@@ -1,0 +1,132 @@
+.page {
+  overflow: hidden;
+}
+[class*=enja] h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+[class*=enja] .section-inner {
+  position: relative;
+  display: table;
+  height: 26em;
+  z-index: 1;
+}
+[class*=enja] .section-inner:before,
+[class*=enja] .section-inner:after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+[class*=enja] .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.enja-head {
+  background-color: #FFDC00;
+}
+  .logo {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.enja-oss {
+  background-color: #fff;
+}
+  .enja-oss .section-inner:before,
+  .enja-oss .section-inner:after {
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 200%;
+    height: 75%;
+    background: #ffffff;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  .enja-oss .section-inner:before {
+    height: 50%;
+    background: #FFEC49;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: -1% 0;
+    transform-origin: -1% 0;
+  }
+
+.enja-article {
+  background-color: #91DDEB;
+}
+  .enja-article .section-inner:before,
+  .enja-article .section-inner:after {
+    top: -53px;
+    right: -33%;
+    z-index: -1;
+    width: 200%;
+    height: 75%;
+    background: #91DDEB;
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  .enja-article .section-inner:before {
+    height: 50%;
+    background: #64CDE2;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    -webkit-transform-origin: 34% 0;
+    transform-origin: 34% 0;
+  }
+
+.enja-howto {
+  background-color: #81BC00;
+  color: #fff;
+}
+  .enja-howto .section-inner:before,
+  .enja-howto .section-inner:after {
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 200%;
+    height: 75%;
+    background: #81BC00;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  .enja-howto .section-inner:before {
+    height: 50%;
+    background: #C1FF00;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: -1% 0;
+    transform-origin: -1% 0;
+  }
+
+.enja-book {
+  background-color: #FEA2A3;
+}
+  .enja-book .section-inner:before,
+  .enja-book .section-inner:after {
+    top: -53px;
+    right: -33%;
+    z-index: -1;
+    width: 200%;
+    height: 75%;
+    background: #FEA2A3;
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  .enja-book .section-inner:before {
+    height: 50%;
+    background: #FE3239;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    -webkit-transform-origin: 34% 0;
+    transform-origin: 34% 0;
+  }

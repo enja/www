@@ -1,0 +1,21 @@
+.logo {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+.logo:before {
+  content: '';
+  display: inline-block;
+  background-image: url(/static/assets/svg/enja.svg);
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  transform: rotate(7deg) translateZ(0);
+  -webkit-transform: rotate(7deg) translateZ(0);
+  -moz-transform: rotate(7deg) translateZ(0);
+  -o-transform: rotate(7deg) translateZ(0);
+  -ms-transform: rotate(7deg) translateZ(0);
+  margin-right: 4px;
+  position: relative;
+    top: 30px;
+}

@@ -1,0 +1,58 @@
+{
+  "name": "enja-www",
+  "version": "0.0.1",
+  "description": "en.ja tries to be a bridge between English and Japanese Web development communities by translating various English into Japanese.",
+  "scripts": {
+    "build-js": "browserify browser/script/main.js | uglifyjs -mc > public/static/script/bundle.js",
+    "build-css": "borschik -i browser/style/main.css -o public/static/style/bundle.css",
+    "build-dev-js": "browserify browser/script/main.js -dv",
+    "build-dev-css": "borschik -i ./browser/style/main.css -o ./public/static/style/bundle.css -m false",
+    "build": "npm run build-js && npm run build-css && harp compile",
+    "build-dev": "npm run build-dev-js && npm run build-dev-css && harp compile",
+    "watch-js": "watchify browser/script/main.js -o static/script/bundle.js -dv",
+    "watch-css": "watchy -w browser/style -- npm run build-dev-css",
+    "watch": "npm run watch-js && npm run watch-css",
+    "start": "harp server .",
+    "sync": "browser-sync",
+    "pagekite": "pagekite.py 9000 true.pagekite.me",
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:enja/www.git"
+  },
+  "keywords": [
+    "harp",
+    "onepage"
+  ],
+  "author": "Yuya Saito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enja/www/issues"
+  },
+  "homepage": "https://github.com/enja/www",
+  "dependencies": {
+    "browserify": "~3.16.x",
+    "harp": "~0.11.x",
+    "uglifyjs": "~2.3.6",
+    "borschik": "~0.4.2"
+  },
+  "devDependencies": {
+    "browser-sync": "~0.4.x",
+    "tape": "~2.3.x",
+    "watchify": "~0.5.0",
+    "watchy": "~0.4.2",
+    "browserify-shim": "~3.1.4"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "./browser/script/lib/prism.js": "Prism"
+  },
+  "optionalDependencies": {
+    "hacker-deps": "~0.1.1"
+  }
+}
